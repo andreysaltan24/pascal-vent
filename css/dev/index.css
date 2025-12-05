@@ -617,12 +617,14 @@ body {
 }
 .contacts-hero__address {
   line-height: 150%; /* 24/16 */
+  transition: color 0.35s cubic-bezier(0.3, 0.72, 0.42, 1);
 }
 .contacts-hero__number {
   color: #7b897d;
 }
 .contacts-hero__number {
   line-height: 150%; /* 24/16 */
+  transition: color 0.35s cubic-bezier(0.3, 0.72, 0.42, 1);
 }
 
 /*#endregion*/
@@ -3481,6 +3483,12 @@ body::after {
     color: #54e165;
   }
   html:not([data-fls-touch]) .column-contacts__address:hover {
+    color: #54e165;
+  }
+  html:not([data-fls-touch]) .contacts-hero__address:hover {
+    color: #54e165;
+  }
+  html:not([data-fls-touch]) .contacts-hero__number:hover {
     color: #54e165;
   }
   html:not([data-fls-touch]) .about-services__title:hover {
