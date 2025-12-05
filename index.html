@@ -1,0 +1,955 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Ruberoid-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Ruberoid-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Ruberoid-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Ruberoid-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/ProximaNova-Semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/ProximaNova-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Pascal Vent</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1764939851759"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1764939851759">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1764939851759">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" data-fls-header-scroll="820" class="header">
+				<div class="header__container">
+					<a href="#!" class="header__logo">
+						<picture>
+							<img alt="Лого компании Pascal Vent" src="./assets/img/logo-header.webp">
+						</picture>
+					</a>
+					<div class="header__menu menu">
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#!" class="menu__link">Услуги</a>
+								</li>
+								<li class="menu__item">
+									<a href="#!" class="menu__link">О Нас</a>
+								</li>
+								<li class="menu__item">
+									<a href="#!" class="menu__link">Польза Продукта</a>
+								</li>
+								<li class="menu__item">
+									<a href="#!" class="menu__link">Оборудование</a>
+								</li>
+								<li class="menu__item">
+									<a href="#!" class="menu__link">Этапы Работы</a>
+								</li>
+								<li class="menu__item">
+									<a href="#!" class="menu__link">Отзывы</a>
+								</li>
+							</ul>
+							<button data-fls-button="" data-fls-popup-link="popup" class="menu__button button button--little">
+								<span class="button--little-content">Связаться</span>
+							</button>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<div data-fls-popup="popup" aria-hidden="true" class="popup">
+					<div data-fls-popup-wrapper="" class="popup__wrapper">
+						<div data-fls-popup-body="" class="popup__body">
+							<button data-fls-popup-close="" type="button" class="popup__close">
+								<span class="--icon-x-close-popup"></span>
+							</button>
+							<div data-fls-popup-content="" class="popup__content">
+								<h2 class="popup__title title--popup">Быстрая связь с нами</h2>
+								<div class="popup__block">
+									<div class="popup__text">
+										<p>
+											Вы можете набрать нам, и менеджеры Pascal Vent с радостью проконсультирует Вас по любому вопросу и помогут
+              определиться с выбором.
+										</p>
+									</div>
+									<div class="popup__schedule">
+										<div class="popup__label">График приема звонков:</div>
+										<div class="popup__time">
+											<div class="popup__icon">
+												<img src="./assets/img/icons/clock.svg" alt="Иконка часов">
+											</div>
+											<div class="popup__dates">ПН-СБ с 9:00 до 19:00</div>
+										</div>
+									</div>
+									<div class="popup__contacts">
+										<div class="popup__phone">
+											<div class="popup__icon">
+												<img src="./assets/img/icons/phone.svg" alt="Иконка телефона">
+											</div>
+											<a href="tel:74923736331" class="popup__phone-link">+ 7 492 373 63 31</a>
+										</div>
+										<div class="popup__line"></div>
+										<div class="popup__phone">
+											<div class="popup__icon">
+												<img src="./assets/img/icons/phone.svg" alt="Иконка телефона">
+											</div>
+											<a href="tel:74243678929" class="popup__phone-link">+ 7 424 367 89 29</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div data-fls-popup="popup-request" aria-hidden="true" class="popup-request">
+					<div data-fls-popup-wrapper="" class="popup-request__wrapper">
+						<div data-fls-popup-body="" class="popup-request__body">
+							<button data-fls-popup-close="" type="button" class="popup-request__close">
+								<span class="--icon-x-close-popup"></span>
+							</button>
+							<div data-fls-popup-content="" class="popup-request__content">
+								<h2 class="popup-request__title title--popup">мы свяжемся с вами</h2>
+								<form class="popup-request__form" action="files/sendmail/sendmail.php" method="POST">
+									<div class="popup-request__inputs">
+										<input type="text" name="form[name]" data-error="Error" placeholder="Ваше Имя" class="popup-request__input">
+										<input type="tel" name="form[phone]" data-error="Error" placeholder="Номер телефона" class="popup-request__input">
+									</div>
+									<button data-fls-button="" type="submit" class="popup-request__button button button--fw button--little button--little-send">
+										<span class="button--little-content">Отправить</span>
+									</button>
+								</form>
+								<div class="popup-request__logo">
+									<picture>
+										<img alt="Логотип компании Pascal Vent" src="./assets/img/logo.webp">
+									</picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<section class="page__hero hero">
+					<div class="hero__container">
+						<div class="hero__body">
+							<h1 class="hero__title title">
+								Чистый Воздух
+								<span class="hero__title--line">
+									<picture>
+										<img class="hero__title--line-pc" alt="Линия в заголовке" src="./assets/img/hero-section/line.webp">
+									</picture>
+									<picture>
+										<img class="hero__title--line-mob" alt="Линия в заголовке" src="./assets/img/hero-section/line-mob.webp">
+									</picture>
+								</span>
+								Вместе С
+								<span class="title--company">Pascal vent</span>
+							</h1>
+							<div class="hero__content">
+								<div class="hero__decor">
+									<picture>
+										<img alt="Иконка декор круги" src="./assets/img/hero-section/circles.webp">
+									</picture>
+								</div>
+								<div class="hero__text">
+									<p>Проектирование, поставка и монтаж систем вентиляции и кондиционирования</p>
+								</div>
+							</div>
+							<div class="hero__contacts contacts-hero">
+								<div class="contacts-hero__location">
+									<div class="contacts-hero__icon">
+										<img src="./assets/img/icons/location.svg" alt="Иконка локации">
+									</div>
+									<a href="https://maps.app.goo.gl/tvnFYYsdtaNzLExj8" class="contacts-hero__address">Московский регион, Москва ул. Плеханова, 28А</a>
+								</div>
+								<div class="contacts-hero__numbers">
+									<div class="contacts-hero__icon-pc">
+										<img src="./assets/img/icons/phone.svg" alt="Иконка телефона">
+									</div>
+									<div class="contacts-hero__calls">
+										<div class="contacts-hero__block">
+											<div class="contacts-hero__icon-mob">
+												<img src="./assets/img/icons/phone.svg" alt="Иконка телефона">
+											</div>
+											<a href="tel:74923736331" class="contacts-hero__number">+ 7 492 373 63 31</a>
+										</div>
+										<div class="contacts-hero__block">
+											<div class="contacts-hero__icon-mob">
+												<img src="./assets/img/icons/phone.svg" alt="Иконка телефона">
+											</div>
+											<a href="tel:74243678929" class="contacts-hero__number">+ 7 424 367 89 29</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="hero__action">
+								<button data-fls-button="" data-fls-popup-link="popup-request" class="hero__button button button--big">
+									<span class="button--big-content">Оставить заявку</span>
+								</button>
+							</div>
+						</div>
+						<div class="hero__background">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/hero-section/image-bg-600.webp" type="image/webp">
+								<img class="hero__image-pc" alt="Фоновая картинка главной секции" src="./assets/img/hero-section/image-bg.webp">
+							</picture>
+						</div>
+					</div>
+					<div class="hero__background-mob">
+						<picture>
+							<img class="hero__image-mob" alt="Фоновая картинка главной секции" src="./assets/img/hero-section/image-bg-mob.webp">
+						</picture>
+					</div>
+				</section>
+				<section class="page__services services">
+					<div class="services__container">
+						<div class="services__body">
+							<div class="services__content content-services">
+								<h2 class="content-services__title title--mid">Предоставляемые Услуги</h2>
+								<div class="content-services__text text">
+									<p>
+										При разработке проекта предложим техническое решение оптимальное по соотношению цены и качества, оно
+              идеально впишется в ваш дизайн, а также будет учитывать все ваши пожелания.
+									</p>
+									<p>
+										Монтаж выполняется опытными бригадами с соблюдением всех действующих технических норм, правил безопасности
+              и строго по согласованному проекту.
+									</p>
+									<p>
+										Одинаково эффективно выполняем проектирование и монтаж на объектах любой сложности – от небольшой
+              квартиры, до объектов со сложными технологическими процессами на основе действующей нормативной
+              документации.
+									</p>
+								</div>
+							</div>
+							<div class="services__about">
+								<div data-fls-tabs="" class="services__about-services about-services">
+									<div data-fls-tabs-titles="" class="about-services__navigation">
+										<button type="button" class="about-services__title --tab-active">
+											Система Вентиляции
+											<span class="--icon-ventilation-system"></span>
+										</button>
+										<button type="button" class="about-services__title">
+											Кондиционирование
+											<span class="--icon-conditioning"></span>
+										</button>
+									</div>
+									<div data-fls-tabs-body="" class="about-services__content">
+										<div class="about-services__body">
+											<ul class="about-services__list">
+												<li class="about-services__item">
+													<span class="icon-tab --icon-design"></span>
+													Проектирование систем вентиляции любой сложности
+												</li>
+												<li class="about-services__item">
+													<span class="icon-tab --icon-inlet-ventilation"></span>
+													Монтаж приточной вентиляции
+												</li>
+												<li class="about-services__item">
+													<span class="icon-tab --icon-exhaust-ventilation"></span>
+													Монтаж вытяжной вентиляции
+												</li>
+												<li class="about-services__item">
+													<span class="icon-tab --icon-humidification"></span>
+													Монтаж вентиляции с увлажнением воздуха
+												</li>
+												<li class="about-services__item">
+													<span class="icon-tab --icon-recuperator"></span>
+													Монтаж вентиляции с рекуператором
+												</li>
+												<li class="about-services__item">
+													<span class="icon-tab --icon-drying-out"></span>
+													Монтаж вентиляции с осушением для бассейна
+												</li>
+											</ul>
+											<div class="about-services__media">
+												<picture>
+													<img class="about-services__image-pc" alt="Изображение вентиляции для пк" src="./assets/img/services-section/ventilation.webp">
+												</picture>
+												<picture>
+													<img class="about-services__image-mob" alt="Изображение вентиляции для моб устройств" src="./assets/img/services-section/ventilation-mob.webp">
+												</picture>
+											</div>
+										</div>
+										<div class="about-services__body">
+											<ul class="about-services__list">
+												<li class="about-services__item">
+													<span class="icon-tab --icon-design"></span>
+													Проектирование систем кондиционирования
+												</li>
+												<li class="about-services__item">
+													<span class="icon-tab --icon-split-system"></span>
+													Монтаж сплит-систем
+												</li>
+												<li class="about-services__item">
+													<span class="icon-tab --icon-multi-split-system"></span>
+													Монтаж мульти сплит-систем
+												</li>
+												<li class="about-services__item">
+													<span class="icon-tab --icon-condenser"></span>
+													Монтаж VRV и VRF систем
+												</li>
+												<li class="about-services__item">
+													<span class="icon-tab --icon-ceiling"></span>
+													Монтаж фанкойлов
+												</li>
+												<li class="about-services__item">
+													<span class="icon-tab --icon-installation"></span>
+													Монтаж настенных, канальных и кассетных кондиционеров
+												</li>
+											</ul>
+											<div class="about-services__media">
+												<picture>
+													<img class="about-services__image-pc" alt="Изображение кондиционера для пк" src="./assets/img/services-section/air-conditioner.webp">
+												</picture>
+												<picture>
+													<img class="about-services__image-mob" alt="Изображение кондиционера для моб устройств" src="./assets/img/services-section/air-conditioner-mob.webp">
+												</picture>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__decisoins decisoins">
+					<div class="decisoins__container">
+						<div class="decisoins__body">
+							<h2 class="decisoins__title title--mid">Комплексное решение по монтажу и вентиляции под ключ</h2>
+							<div class="decisoins__items">
+								<div class="decisoins__item item-decisoins">
+									<div class="item-decisoins__price">от 100 000 ₽</div>
+									<div class="item-decisoins__media">
+										<picture>
+											<img class="item-decisoins__image" alt="Квартиры и офисы" src="./assets/img/decisoins-section/apartments-and-offices.webp">
+										</picture>
+									</div>
+									<a href="#!" class="item-decisoins__link">Квартиры и офисы</a>
+								</div>
+								<div class="decisoins__item item-decisoins">
+									<div class="item-decisoins__price">от 100 000 ₽</div>
+									<div class="item-decisoins__media">
+										<picture>
+											<img class="item-decisoins__image" alt="Магазины и ТЦ" src="./assets/img/decisoins-section/shops-and-malls.webp">
+										</picture>
+									</div>
+									<a href="#!" class="item-decisoins__link">Магазины и ТЦ</a>
+								</div>
+								<div class="decisoins__item item-decisoins">
+									<div class="item-decisoins__price">от 150 000 ₽</div>
+									<div class="item-decisoins__media">
+										<picture>
+											<img class="item-decisoins__image" alt="Фитнес центры" src="./assets/img/decisoins-section/fitness-centers.webp">
+										</picture>
+									</div>
+									<a href="#!" class="item-decisoins__link">Фитнес центры</a>
+								</div>
+								<div class="decisoins__item item-decisoins">
+									<div class="item-decisoins__price">от 150 000 ₽</div>
+									<div class="item-decisoins__media">
+										<picture>
+											<img class="item-decisoins__image" alt="Бассейны" src="./assets/img/decisoins-section/swimming-pools.webp">
+										</picture>
+									</div>
+									<a href="#!" class="item-decisoins__link">Бассейны</a>
+								</div>
+								<div class="decisoins__item item-decisoins">
+									<div class="item-decisoins__price">от 200 000 ₽</div>
+									<div class="item-decisoins__media">
+										<picture>
+											<img class="item-decisoins__image" alt="Загородные дома, коттеджи, таунхаусы" src="./assets/img/decisoins-section/townhouses.webp">
+										</picture>
+									</div>
+									<a href="#!" class="item-decisoins__link">Загородные дома, коттеджи, таунхаусы</a>
+								</div>
+								<div class="decisoins__item item-decisoins">
+									<div class="item-decisoins__price">от 200 000 ₽</div>
+									<div class="item-decisoins__media">
+										<picture>
+											<img class="item-decisoins__image" alt="Рестораны, кафе, бары" src="./assets/img/decisoins-section/restaurants.webp">
+										</picture>
+									</div>
+									<a href="#!" class="item-decisoins__link">Рестораны, кафе, бары</a>
+								</div>
+								<div class="decisoins__item item-decisoins">
+									<div class="item-decisoins__price">от 200 000 ₽</div>
+									<div class="item-decisoins__media">
+										<picture>
+											<img class="item-decisoins__image" alt="Стоматологии, клиники" src="./assets/img/decisoins-section/hospitals.webp">
+										</picture>
+									</div>
+									<a href="#!" class="item-decisoins__link">Стоматологии, клиники</a>
+								</div>
+								<div class="decisoins__item item-decisoins">
+									<div class="item-decisoins__price">от 100 000 ₽</div>
+									<div class="item-decisoins__media">
+										<picture>
+											<img class="item-decisoins__image" alt="Салоны красоты, СПА" src="./assets/img/decisoins-section/beauty-salons.webp">
+										</picture>
+									</div>
+									<a href="#!" class="item-decisoins__link">Салоны красоты, СПА</a>
+								</div>
+								<div class="decisoins__bg-top">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/decisoins-section/up-bg-image-600.webp" type="image/webp">
+										<img alt="Верхняя фоновая картинка из зеленых листьев" src="./assets/img/decisoins-section/up-bg-image.webp">
+									</picture>
+								</div>
+								<div class="decisoins__bg-bottom">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/decisoins-section/down-bg-image-600.webp" type="image/webp">
+										<img alt="Нижняя фоновая картинка из зеленых листьев" src="./assets/img/decisoins-section/down-bg-image.webp">
+									</picture>
+								</div>
+							</div>
+							<div class="decisoins__lungs">
+								<picture>
+									<img alt="Фоновое изображение зеленых легких" src="./assets/img/decisoins-section/lungs.webp">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__steps steps">
+					<div class="steps__container">
+						<div class="steps__body">
+							<h2 class="steps__title title--mid">3 простых шага к очищению воздуха</h2>
+							<div class="steps__block">
+								<div class="steps__pretitle">Кажется, это знак...</div>
+								<ul class="steps__list">
+									<li class="steps__item">Получите скидку 5% на монтаж при заполнении анкеты на сайте</li>
+									<li class="steps__item">Бесплатно сделаем проект и пусконаладку системы при заказе монтажа</li>
+									<li class="steps__item">
+										Кэшбек до 10% дизайнерам при передаче Клиента и заказе у нас проекта с монтажом!
+									</li>
+								</ul>
+							</div>
+							<div class="steps__items">
+								<div class="steps__card card-step">
+									<div class="card-step__media">
+										<picture>
+											<img alt="иконка" src="./assets/img/steps-section/01.webp">
+										</picture>
+									</div>
+									<div class="card-step__action">Ваше желание</div>
+								</div>
+								<div class="steps__card card-step">
+									<div class="card-step__media">
+										<picture>
+											<img alt="иконка" src="./assets/img/steps-section/02.webp">
+										</picture>
+									</div>
+									<div class="card-step__action">Заявка</div>
+								</div>
+								<div class="steps__card card-step">
+									<div class="card-step__media">
+										<picture>
+											<img alt="иконка" src="./assets/img/steps-section/03.webp">
+										</picture>
+									</div>
+									<div class="card-step__action">Реализация</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__request request">
+					<div class="request__container">
+						<div class="request__body">
+							<h2 class="request__title title--mid">Оставьте заявку и мы с вами свяжемся</h2>
+							<form class="request__form" action="files/sendmail/sendmail.php" method="POST">
+								<div class="request__inputs">
+									<input type="text" name="form[name]" data-error="Error" placeholder="Ваше Имя" class="request__input">
+									<input type="tel" name="form[phone]" data-error="Error" placeholder="Номер телефона" class="request__input">
+								</div>
+								<button data-fls-button="" type="submit" class="request__button button button--little button--little-send">
+									<span class="button--little-content">Связаться</span>
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+				<section class="page__about about">
+					<div class="about__container">
+						<div class="about__body">
+							<div class="about__content">
+								<h2 class="about__title title--mid">О Нас Особенности</h2>
+								<div class="about__text text">
+									<p>
+										Мы любим то, чем занимаемся – поэтому у нас индивидуальный подход к каждому человеку, креативные решения
+              для проекта любой сложности и высокий уровень клиентского сервиса.
+									</p>
+									<p>
+										Именно поэтому нам доверяют сложнейшие задачи, рекомендуют нас и возвращаются вновь. Доверьте нам
+              воплощение ваших самых изысканных и технологичных задач, и мы сделаем всё с высочайшим уровнем сервиса
+              Pascal Vent.
+									</p>
+									<p>
+										Pascal Vent гарантирует сертифицированные современные системы, оборудование, качественные материалы и
+              самые оптимальные решения под любой бюджет.
+									</p>
+								</div>
+							</div>
+							<div class="about__items">
+								<div class="about__item item-about">
+									<div class="item-about__title">10 лет на рынке</div>
+									<div class="item-about__text">
+										<p>Работаем как единое целое</p>
+									</div>
+								</div>
+								<div class="about__item item-about">
+									<div class="item-about__title">+ 11 лет стажа</div>
+									<div class="item-about__text">
+										<p>Опытные и обученые специалисты своего дела</p>
+									</div>
+								</div>
+								<div class="about__item item-about">
+									<div class="item-about__title">+ 180 клиентов</div>
+									<div class="item-about__text">
+										<p>Число счастливых клиентов за этот период</p>
+									</div>
+								</div>
+								<div class="about__item item-about">
+									<div class="item-about__title">+ 470 проектов</div>
+									<div class="item-about__text">
+										<p>Большое количество реализованных проектов</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__advantages advantages">
+					<div class="advantages__container">
+						<div class="advantages__body">
+							<article class="advantages__content content-advantages">
+								<h2 class="content-advantages__title title--mid">комфорт и Уют в любое время года</h2>
+								<div class="content-advantages__icons">
+									<div class="content-advantages__icon content-advantages__icon--icon-waves"></div>
+									<div class="content-advantages__icon content-advantages__icon--icon-hot"></div>
+									<div class="content-advantages__icon content-advantages__icon--icon-eco"></div>
+									<div class="content-advantages__icon content-advantages__icon--icon-bacteria"></div>
+									<div class="content-advantages__icon content-advantages__icon--icon-humidity"></div>
+									<div class="content-advantages__icon content-advantages__icon--icon-pollution"></div>
+								</div>
+								<ul class="content-advantages__list">
+									<li class="content-advantages__item">Создание комфортных условий для работы и отдыха</li>
+									<li class="content-advantages__item">Чистый, свежий, приточный воздух круглый год</li>
+									<li class="content-advantages__item">
+										Удаление не приятных запахов, избыточной влажности и накопившегося углекислого газа из помещений
+									</li>
+									<li class="content-advantages__item">Поддержание комфортной температуры и влажности воздуха зимой и летом</li>
+								</ul>
+								<div class="content-advantages__text text">
+									<p>
+										Pascal Vent поможет улучшить ваше самочувствие и повысить работоспособность днем, а ночью подарит здоровый
+              и крепкий сон. Это важно для тех, кто следит за своим здоровьем и здоровьем своих близких.
+									</p>
+								</div>
+								<button data-fls-button="" data-fls-popup-link="popup-request" class="content-advantages__button button button--big">
+									<span class="button--big-content">Заполнить заявку</span>
+								</button>
+							</article>
+							<div class="advantages__media">
+								<div class="advantages__column">
+									<div class="advantages__image-1">
+										<picture>
+											<img class="advantages__img" alt="Вытяжка" src="./assets/img/advantages-section/hood.webp">
+										</picture>
+									</div>
+									<div class="advantages__image-2">
+										<picture>
+											<img class="advantages__img" alt="Схема циркуляции воздуха" src="./assets/img/advantages-section/scheme.webp">
+										</picture>
+									</div>
+								</div>
+								<div class="advantages__column">
+									<div class="advantages__image-3">
+										<picture>
+											<img class="advantages__img" alt="Труба" src="./assets/img/advantages-section/pipe.webp">
+										</picture>
+									</div>
+									<div class="advantages__image-4">
+										<picture>
+											<img class="advantages__img" alt="Ветиляционная шахта" src="./assets/img/advantages-section/ventilation-section.webp">
+										</picture>
+									</div>
+								</div>
+								<div class="advantages__background">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/advantages-section/Ellipse-bg-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/advantages-section/Ellipse-bg-1200.webp" type="image/webp">
+										<img alt="фоновый цвет зеленый" src="./assets/img/advantages-section/Ellipse-bg.webp">
+									</picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__works works">
+					<div class="works__container">
+						<h2 class="works__title title--mid">Понятная и эффективная схема работы</h2>
+						<div class="works__items">
+							<div class="works__item item-work">
+								<picture>
+									<img class="item-work__bg-image-01" alt="Фоновое изображение конверта" src="./assets/img/works-section/01.webp">
+								</picture>
+								<div class="item-work__body">
+									<div class="item-work__title">Получение заявки</div>
+									<div class="item-work__text">
+										<p>Заполните форму, укажите свои данные и отправьте нашим менеджерам в обработку</p>
+									</div>
+								</div>
+							</div>
+							<div class="works__item item-work">
+								<picture>
+									<img class="item-work__bg-image-02" alt="Изображение консультации, генерации идей" src="./assets/img/works-section/02.webp">
+								</picture>
+								<div class="item-work__body">
+									<div class="item-work__title">Консультация</div>
+									<div class="item-work__text">
+										<p>
+											После обработки Вашей заявки, мы связываемся с Вами, выявляем потребности и пожелания, а также проводим
+                техническую консультацию
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="works__item item-work">
+								<picture>
+									<img class="item-work__bg-image-03" alt="Изображение выезд на локацию" src="./assets/img/works-section/03.webp">
+								</picture>
+								<div class="item-work__body">
+									<div class="item-work__title">Выезд на объект</div>
+									<div class="item-work__text">
+										<p>
+											В назначенное время мы выезжаем на объект и согласовываем основные технические решения, обсуждаем
+                техническое задание
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="works__item item-work">
+								<picture>
+									<img class="item-work__bg-image-04" alt="Изображение составления графика" src="./assets/img/works-section/04.webp">
+								</picture>
+								<div class="item-work__body">
+									<div class="item-work__title">Составляем График</div>
+									<div class="item-work__text">
+										<p>
+											На этом этапе мы составляем коммерческое предложение и занимаемся согласованием графика работ
+                (проектирования, закупки оборудования и монтажа).
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="works__item item-work">
+								<picture>
+									<img class="item-work__bg-image-05" alt="Изображение договора" src="./assets/img/works-section/05.webp">
+								</picture>
+								<div class="item-work__body">
+									<div class="item-work__title">договор</div>
+									<div class="item-work__text">
+										<p>Мы заключаем с Вами договор и начинаем проектирование и согласование проекта</p>
+									</div>
+								</div>
+							</div>
+							<div class="works__item item-work">
+								<picture>
+									<img class="item-work__bg-image-06" alt="Изображение поставки" src="./assets/img/works-section/06.webp">
+								</picture>
+								<div class="item-work__body">
+									<div class="item-work__title">Поставка и монтаж</div>
+									<div class="item-work__text">
+										<p>
+											На этом этапе, происходит поставка всех материалов и начинается выполнение монтажных работ
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="works__item item-work">
+								<picture>
+									<img class="item-work__bg-image-07" alt="Изображение рукопожатия" src="./assets/img/works-section/07.webp">
+								</picture>
+								<div class="item-work__body">
+									<div class="item-work__title item-work__title--center">Подписание акта выполненных работ</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__portfolio portfolio">
+					<div class="portfolio__container">
+						<div class="portfolio__head">
+							<h2 class="portfolio__title title--mid">Портфолио И Процесс Работы</h2>
+							<div class="portfolio__text text">
+								<p>
+									Технические решения, принятые в рабочих чертежах, соответствуют требованиям экологических,
+            санитарно-гигиенических, противопожарных и других норм и правил, и обеспечивают безопасную для жизни людей
+            эксплуатацию объекта при соблюдении предусмотренных рабочими чертежами мероприятий.
+								</p>
+							</div>
+						</div>
+						<div class="portfolio__bg">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/about-section/Ellipse-1-600.webp" type="image/webp">
+								<img class="portfolio__bg-image" alt="Зеленый эллипс" src="./assets/img/about-section/Ellipse-1.webp">
+							</picture>
+						</div>
+						<div class="portfolio__body">
+							<div class="portfolio__navigation">
+								<button type="button" class="prev-portfolio-button">
+									<span class="prev-portfolio-button--icon-prev-swiper-button"></span>
+								</button>
+								<button type="button" class="next-portfolio-button">
+									<span class="next-portfolio-button--icon-next-swiper-button"></span>
+								</button>
+							</div>
+							<div data-fls-slider="" class="portfolio__slider swiper">
+								<div class="portfolio__wrapper swiper-wrapper">
+									<div class="portfolio__slide slide-portfolio swiper-slide">
+										<div class="slide-portfolio__body">
+											<picture>
+												<img class="slide-portfolio__image" alt="приточная вентиляция" src="./assets/img/portfolio-section/supply-ventilation-1.webp">
+											</picture>
+											<div class="slide-portfolio__block">
+												<div class="slide-portfolio__logo">
+													<picture>
+														<img alt="Логотип кампании Pascal Vent" src="./assets/img/logo-mid.webp">
+													</picture>
+												</div>
+												<div class="slide-portfolio__box">
+													<div class="slide-portfolio__title">приточная вентиляция</div>
+													<div class="slide-portfolio__text">
+														<p>Монтаж приточной вентиляции (объект в Прайм Парк)</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="portfolio__slide slide-portfolio swiper-slide">
+										<div class="slide-portfolio__body">
+											<picture>
+												<img class="slide-portfolio__image" alt="приточная вентиляция" src="./assets/img/portfolio-section/supply-ventilation-2.webp">
+											</picture>
+											<div class="slide-portfolio__block">
+												<div class="slide-portfolio__logo">
+													<picture>
+														<img alt="Логотип кампании Pascal Vent" src="./assets/img/logo-mid.webp">
+													</picture>
+												</div>
+												<div class="slide-portfolio__box">
+													<div class="slide-portfolio__title">приточная вентиляция</div>
+													<div class="slide-portfolio__text">
+														<p>Монтаж приточной вентиляции (объект в Прайм Парк)</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="portfolio__slide slide-portfolio swiper-slide">
+										<div class="slide-portfolio__body">
+											<picture>
+												<img class="slide-portfolio__image" alt="Канальные кондиционеры" src="./assets/img/portfolio-section/ducted-air-conditioning-1.webp">
+											</picture>
+											<div class="slide-portfolio__block">
+												<div class="slide-portfolio__logo">
+													<picture>
+														<img alt="Логотип кампании Pascal Vent" src="./assets/img/logo-mid.webp">
+													</picture>
+												</div>
+												<div class="slide-portfolio__box">
+													<div class="slide-portfolio__title">Канальные кондиционеры</div>
+													<div class="slide-portfolio__text">
+														<p>Монтаж канальных кондиционеров (объект в Прайм Парк)</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="portfolio__slide slide-portfolio swiper-slide">
+										<div class="slide-portfolio__body">
+											<picture>
+												<img class="slide-portfolio__image" alt="Канальные кондиционеры" src="./assets/img/portfolio-section/ducted-air-conditioning-2.webp">
+											</picture>
+											<div class="slide-portfolio__block">
+												<div class="slide-portfolio__logo">
+													<picture>
+														<img alt="Логотип кампании Pascal Vent" src="./assets/img/logo-mid.webp">
+													</picture>
+												</div>
+												<div class="slide-portfolio__box">
+													<div class="slide-portfolio__title">Канальные кондиционеры</div>
+													<div class="slide-portfolio__text">
+														<p>Монтаж канальных кондиционеров (объект в Прайм Парк)</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__clients clients">
+					<svg class="clients__wave" viewbox="0 0 1440 200" preserveaspectratio="none">
+						<path class="clients__path" d="M0,60 
+ C200,10 400,0 720,40 
+ C1050,80 1250,40 1440,20 
+ V0 H0 Z"></path>
+					</svg>
+					<div class="clients__container">
+						<div class="clients__body">
+							<div class="clients__content">
+								<h2 class="clients__title title--mid">Известные Клиенты Которые Нам Доверились</h2>
+								<div class="clients__text text">
+									<p>
+										Реализованы проекты квартир и коммерческих помещений в жилых комплексах от крупных застройщиков таких как:
+              Level, ФСК, MR групп, ПИК, Самолет, Гранель, Донстрой, Пионер, Эталон, А101, Sminex, Vesper, Инград,
+              КРОСТ, МИЦ. Мы ценим каждого клиента Pascal Vent и с радостью готовы расширять нашу клиентскую базу.
+									</p>
+								</div>
+							</div>
+							<div class="clients__companies">
+								<div class="clients__slider-wrapper">
+									<div data-fls-slider="" class="clients__slider swiper">
+										<!-- Частина слайдера, що рухається -->
+										<div class="clients__wrapper swiper-wrapper">
+											<!-- Слайд -->
+											<div class="clients__slide swiper-slide">
+												<div class="clients__logo-company">
+													<picture>
+														<img alt="MR group лого компании" src="./assets/img/clients-section/mr-group.webp">
+													</picture>
+												</div>
+											</div>
+											<div class="clients__slide swiper-slide">
+												<div class="clients__logo-company">
+													<picture>
+														<img alt="Sminex лого компании" src="./assets/img/clients-section/sminex.webp">
+													</picture>
+												</div>
+											</div>
+											<div class="clients__slide swiper-slide">
+												<div class="clients__logo-company">
+													<picture>
+														<img alt="GG лого компании" src="./assets/img/clients-section/gg.webp">
+													</picture>
+												</div>
+											</div>
+										</div>
+										<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+									</div>
+									<div class="clients__navigation">
+										<button type="button" class="prev-clients-button">
+											<span class="prev-clients-button--icon-prev-swiper-button"></span>
+										</button>
+										<button type="button" class="next-clients-button">
+											<span class="next-clients-button--icon-next-swiper-button"></span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__columns">
+						<div class="footer__column column-about">
+							<div class="column-about__logo">
+								<picture>
+									<img alt="Логотип компании Pascal Vent" src="./assets/img/logo.webp">
+								</picture>
+							</div>
+							<div class="column-about__block about-block">
+								<div class="about-block__text">
+									<p>
+										Компания "Pascal Vent" входит в число лучших специализированных организаций, с широким ассортиментом
+              товаров и услуг, предназначенных для систем вентиляции и кондиционирования, предоставляющих высокий сервис
+              и удобство обслуживания нашим клиентам.
+									</p>
+								</div>
+								<div class="about-block__line"></div>
+								<div class="about-block__slogan">
+									Чистый воздух вместе с
+									<span class="about-block__span">Pascal Vent</span>
+								</div>
+							</div>
+						</div>
+						<div class="footer__column column-contacts">
+							<h3 class="column-contacts__title title--footer">Контакты</h3>
+							<div class="column-contacts__blocks">
+								<div class="column-contacts__block-1">
+									<div class="column-contacts__link-block">
+										<div class="column-contacts__icon">
+											<img src="./assets/img/icons/phone.svg" alt="иконка телефона">
+										</div>
+										<a href="tel:74923736331" class="column-contacts__link-phone">+ 7 492 373 63 31</a>
+									</div>
+									<div class="column-contacts__link-block">
+										<div class="column-contacts__icon">
+											<img src="./assets/img/icons/phone.svg" alt="иконка телефона">
+										</div>
+										<a href="tel:74243678929" class="column-contacts__link-phone">+ 7 424 367 89 29</a>
+									</div>
+									<div class="column-contacts__link-block">
+										<div class="column-contacts__icon">
+											<img src="./assets/img/icons/envelope.svg" alt="иконка почтового конверта">
+										</div>
+										<a href="mailto:PascalVent@mail.ru" class="column-contacts__link-mail">PascalVent@mail.ru</a>
+									</div>
+								</div>
+								<div class="column-contacts__block-2">
+									<div class="column-contacts__schedule">
+										<div class="column-contacts__icon">
+											<img src="./assets/img/icons/calendar.svg" alt="иконка календаря">
+										</div>
+										<div class="column-contacts__schedule-text">
+											Пн - Сб: 9:00 - 19:00
+											<br>
+											Вс: выходной
+										</div>
+									</div>
+									<div class="column-contacts__location">
+										<div class="column-contacts__icon">
+											<img src="./assets/img/icons/location.svg" alt="иконка локации">
+										</div>
+										<a href="https://maps.app.goo.gl/tvnFYYsdtaNzLExj8" class="column-contacts__address">Москва ул. Плеханова, 28А</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="footer__column column-request">
+							<div class="column-request__title title--footer">Заполнить заявку</div>
+							<form class="column-request__form" action="files/sendmail/sendmail.php" method="POST">
+								<div class="column-request__inputs">
+									<input type="text" name="form[name]" data-error="Error" placeholder="Ваше Имя" class="column-request__input">
+									<input type="tel" name="form[phone]" data-error="Error" placeholder="Номер телефона" class="column-request__input">
+								</div>
+								<button data-fls-button="" type="submit" class="column-request__button button button--little button--little-send">
+									<span class="button--little-content">отправить</span>
+								</button>
+							</form>
+						</div>
+						<div class="footer__column-mob about-block">
+							<div class="about-block__text">
+								<p>
+									Компания "Pascal Vent" входит в число лучших специализированных организаций, с широким ассортиментом товаров
+            и услуг, предназначенных для систем вентиляции и кондиционирования, предоставляющих высокий сервис и
+            удобство обслуживания нашим клиентам.
+								</p>
+							</div>
+							<div class="about-block__line"></div>
+							<div class="about-block__slogan">
+								Чистый воздух вместе с
+								<span class="about-block__span">Pascal Vent</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
